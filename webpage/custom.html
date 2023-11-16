@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 레시피</title>
+
+    <!--외부 css파일 사용-->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header><!--상단 홈페이지 제목 및 네비게이션바-->
+        <h1>A Healthy Recipe</h1>
+        <nav>
+            <span><a href="/">Home</a></span>
+            <span><a href="/rice">Rice</a></span>
+            <span><a href="/bread">Bread</a></span>
+            <span><a href="/noodle">Noodle</a></span>
+            <span><a href="/soup">Soup</a></span>
+            <span><a href="/custom" id="selected">Custom</a></span>
+        </nav>
+    </header>
+
+    <section class="cen">
+        <h2>🤩 나만의 Recipe를 만들어 보세요!</h2>
+        <p>본인만의 좋은 아이디어가 있다면 기록해보세요.</p>
+        <br>
+        <!--웹페이지에서 사용자로부터 폼에 입력을 받아 mysql에 저장, 웹페이지에 출력-->
+        <form action="/save" method="post">
+            작성자 : <input type="text" name="id"/><br>
+            음식 이름 : <input type="text" name="foodname" /><br>
+            재료 : <input type="text" name="ingredient" /><br>
+            음식 카테고리 : 
+            <select name="category">
+                <option value="Rice">Rice</option>
+                <option value="Bread">Bread</option>
+                <option value="Noodle" selected="selected">Noodle</option>
+                <option value="Soup">Soup</option>
+                <option value="etc">etc.</option>
+            </select>
+            <br>
+            <!--저장버튼을 누르면 mysql에 입력한 데이터들이 전송된다.-->
+            <button type="submit" id="btsave" >저장</button>
+        </form>
+    </section>
+
+</body>
+</html>

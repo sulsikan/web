@@ -1,0 +1,154 @@
+body {
+    /*기본 배경컬러, 폰트 사이즈 설정*/
+    background-color: #eaf0f3;
+    font-size: 20px;
+    font-family: verdana, Arial;
+    padding-top: 90px;
+    margin: 100px;
+    width: 1100px;
+    /*배경 사진 설정*/
+    background-image: url('health.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    }
+
+header {    
+        /*상단고정 메뉴바 설정*/
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 90px;
+        padding: 30px 50px 30px 50px;
+        background: #d94925;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+        color: #efb5a7;
+    }
+
+nav{   
+        /*네비게이션 바 스타일 설정*/
+        border: 5px solid #efb5a7;
+        padding: 20px;
+        width: 800px;
+        text-align: center;
+    }
+
+/*현재 어느 메뉴에 있는지 메뉴 강조표시*/
+#selected {
+    color: bisque;
+}
+
+a {
+        /*네비게이션 링크 기본 디자인 설정*/
+        text-decoration-line: none;
+        color: white;
+        font-size: 20px;
+        margin: 0 25px;
+    }
+
+a:hover{
+        /*네비게이션 메뉴에 마우스 올렸을 때 디자인 설정*/
+        border-bottom: 3px solid #efb5a7;
+    }
+
+p {
+    /*기본 문단 스타일 설정*/
+    margin: 1px;
+    padding: 1px;
+    color: rgb(110, 110, 110);
+    font-size: 20px;
+    }
+
+
+section {
+    margin: 50px 0px 0px 0px;
+    padding: 0px 70px 0px 70px;
+    width: 100%;
+}
+
+#main {
+    /*home.html문서의 메인 내용 배치 설정*/
+    float: left;
+    width: 650px;
+    margin: 50px 0px 0px 0px;
+    padding: 0px 0px 0px 70px;
+    font-weight: bold;
+}
+
+#mainimg {
+    /*home.html문서의 메인 이미지 사이즈 설정*/
+    width: 350px;
+    }
+
+.recipeimg {
+    /*각 음식메뉴의 조리사진 이미지 스타일 설정*/
+    float: left;
+    width: 500px;
+    border: 5px solid #efb5a7;
+    margin: 50px;
+    position: relative;
+    left: 20px;
+}
+
+#horiz {
+    /*각 음식메뉴의 메인과 조리법 사이에 들어가는 수평선 스타일 설정*/
+    margin-left: 50px;
+    margin-right: -50px;
+}
+
+.linkbt{
+    /*링크 버튼 스타일 설정*/
+    border: 3px solid black;
+    background-color: #ecb6b6;
+    width: 250px;
+    height: 50px;
+    color: black;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.linkbt:hover{
+    /*버튼에 마우스 올렸을 때 스타일 설정*/
+    background-color: #ce9f9f;
+}
+
+.cen{
+    /*하단 출처, 동영상, 원본사이트 이동버튼 가운데로 배치*/
+    text-align: center;
+}
+
+#btsave {
+    /*custom페이지의 저장 버튼 스타일 설정*/
+    border: 2px solid black;
+    background-color: #ecb6b6;
+    color: black;
+    width: 50px;
+    height: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#btsave:hover {
+    /*저장 버튼에 마우스 올렸을 때 스타일 설정*/
+    background-color: #ce9f9f;
+}
+
+input {
+    width: 150px;
+    height: 20px;
+}
+
+table {
+    /*save.ejs의 표 스타일 설정*/
+    margin-left:auto; 
+    margin-right:auto;
+    border-collapse: collapse;
+    border: 3px solid black;
+    width : 1000px;
+    height: 200px;
+}

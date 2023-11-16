@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 레시피</title>
+
+    <!--외부 css파일 사용-->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <header><!--상단 홈페이지 제목 및 네비게이션바-->
+        <h1>A Healthy Recipe</h1>
+        <nav>
+            <span><a href="/">Home</a></span>
+            <span><a href="/rice">Rice</a></span>
+            <span><a href="/bread">Bread</a></span>
+            <span><a href="/noodle">Noodle</a></span>
+            <span><a href="/soup">Soup</a></span>
+            <span><a href="/custom" id="selected">Custom</a></span>
+        </nav>
+    </header>
+
+    <section class="cen">
+        <br><br>
+        <h2>레시피가 성공적으로 데이터베이스에 저장되었어요!</h2>
+        <br><br><br><br>
+        <hr>
+        <br>
+        <h2>🤩 저장된 나만의 Recipe 결과 🤩</h2>
+        <br>
+        <script>
+            
+        </script>
+        <table border="1">
+            <tr>
+                <th>작성자</th><th>음식 이름</th><th>재료</th><th>카테고리</th>
+            </tr>
+            <tr>
+                <td><%= data.id %></td><td><%= data.foodname %></td><td><%= data.ingredient %></td><td><%= data.category %></td>
+            </tr>
+
+        </table>
+    </section>
+
+</body>
+</html>
